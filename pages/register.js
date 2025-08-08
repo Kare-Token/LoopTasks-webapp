@@ -86,20 +86,26 @@ export default function Register() {
             </>
           ) : (
             <div className="text-center space-y-4">
-              <h2 className="text-2xl font-bold text-green-400">✅ Registration Successful!</h2>
-              <p className="text-lightYellow/80">
-                You’ve activated your free trial and earned your first <strong>$2</strong> by completing one task.
-              </p>
-              <a
-                href="/task"
-                className="inline-block mt-4 bg-green-500 hover:bg-green-300 text-black font-bold py-2 px-6 rounded transition"
-              >
-                🎬 Go to Today’s Task
-              </a>
-            </div>
-          )}
-        </div>
-      </main>
-    </>
-  );
-}
+  <h2 className="text-2xl font-bold text-green-400">🎉 Trial Activated!</h2>
+  <p className="text-lightYellow/80">
+    You earned your first <strong>$2</strong>! 🤑<br />
+    <span className="text-red-400 font-semibold">
+      Upgrade required to withdraw trial earnings.
+    </span>
+  </p>
+  <div className="flex gap-4 justify-center mt-4">
+    <a
+      href="/task"
+      className="bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded transition"
+    >
+      🎬 Do Today’s Task
+    </a>
+    <a
+      href="/upgrade"
+      className="bg-burgundy hover:bg-lightYellow text-lightYellow hover:text-black font-bold py-2 px-6 rounded transition"
+    >
+      🔓 Unlock & Upgrade
+    </a>
+  </div>
+</div>
+
